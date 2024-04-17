@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speedaf Navbar</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4458aef374.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="navbar-container">
+        <nav class="navbar">
+          <!-- LEFT -->
+          <div class="left">
+            <img src="./images/speedaf_logo.png" alt="speedaf" class="logo" />
+            <ul class="nav-menu">
+              <li class="nav-list">
+                <a href="/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-list">
+                <a href="#track" class="nav-link">Track</a>
+              </li>
+              <li class="nav-list dropdown">
+                <a href="#shipping" class="nav-link"
+                  >Shipping <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul class="dropdown-nav-menu">
+                  <li class="nav-list">
+                    <a href="#ship_now" class="nav-link">Ship Now </a>
+                  </li>
+                  <li class="nav-list">
+                    <a href="#rate" class="nav-link">Rate </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-list">
+                <a href="#solutions" class="nav-link"
+                  >Solution & Services <i class="fa-solid fa-chevron-down"></i
+                ></a>
+              </li>
+              <li class="nav-list">
+                <a href="#about" class="nav-link"
+                  >About Speedaf <i class="fa-solid fa-chevron-down"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="right">
+            <button class="change-lang">
+              Nigeria-English
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <button class="btn-primary">Register/Login</button>
+          </div>
+          <button class="tnavbar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+
+      <!-- SLIDESHPW SECTION -->
+      <section class="slideshow-section">
+        <p class="description">FAST SAFE RELIABLE</p>
+        <h1 class="title">
+          One-Stop Logistics Service Provider
+          <span class="break">Focusing on Emerging Markets</span>
+        </h1>
+        <div class="flex mt-s">
+          <input
+            type="text"
+            name="tracking_no"
+            class="input-field"
+            placeholder="Enter your Tracking Number"
+          />
+          <input type="submit" value="Track" class="submit-btn" />
+        </div>
+      </section>
+      <div class="bg-cover"></div>
+    </section>
+
+    <!-- SECTION TWO -->
+    <section class="dark-container">
+      <a href="#" class="col">
+        <img src="./images/1.png" alt="ship" />
+        <h2 class="sub-title">Ship</h2>
+      </a>
+      <a href="#" class="col">
+        <img src="./images/location.png" alt="ship" />
+        <h2 class="sub-title">Look for Service Site</h2>
+      </a>
+      <a href="#" class="col">
+        <img src="./images/hands.png" alt="ship" />
+        <h2 class="sub-title">Business customer</h2>
+      </a>
+    </section>
+
+    <!-- SECTION THREE -->
+    <section class="light-container">
+      <h2 class="primary-header">Product & Service</h2>
+      <!-- 1ST CHILD -->
+      <div class="products-container">
+        <div class="product">
+            <img src="./images/product1.jpg" width="250" height="97" alt="International shipping" />
+          <div class="product-info">
+            <h3 class="product-heading">International shipping</h3>
+            <p class="product-details">
+              Speedaf is focused on providing customers with cross-border
+              one-stop, full visualization, door-to-door integrated logistics
+              service solutions for all kinds of parcels from the country of
+              origin directly to the country of destination for delivery.
+            </p>
+            <div class="icon">
+              <img src="./images/downloadouse_icon.png"  alt="house icon" />
+            </div>
+          </div>
+          
+        </div>
+        <div class="product">
+          <img src="./images/product2.jpg" width="250" height="97" alt="Fulfillment by Speedaf (FBS)" />
+          <div class="product-info">
+            <h3 class="product-heading">Fulfillment by Speedaf (FBS)</h3>
+            <p class="product-details">
+              We have built order processing centers in Africa and other places,
+              with a standardized team, using WMS and OMS to provide sellers
+              with warehousing and distribution services that integrate
+              purchasing, warehousing, orders, inventory, logistics and
+              distribution.
+            </p>
+          </div>
+        </div>
+        <div class="product">
+          <img src="./images/product3.jpg" width="250" height="97" alt="Local delivery" />
+          <div class="product-info">
+            <h3 class="product-heading">Local delivery</h3>
+            <p class="product-details">
+              The delivery network is built by the international management team
+              with rich experience in local operation and management, and the
+              service products include standard express, LTL, and efficient
+              delivery capacity to meet the diversified needs of customers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 2ND CHILD -->
+      <div class="img-wrapper">
+        <div class="box">
+          <h3>Important News</h3>
+        </div>
+        <div class="box">
+          <h3>Contact Us</h3>
+        </div>
+        <div class="box">
+          <h3>FAQs</h3>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div class="social-media">
+      <p style="color: #122533; font-size: 1.7rem; font-weight: 600">
+        Follow us
+      </p>
+      <div class="links">
+        <i class="fa-brands fa-square-x-twitter x-icon"></i>
+        <i class="fa-brands fa-square-facebook fb-icon"></i>
+        <i class="fa-brands fa-square-instagram instagram-icon"></i>
+        <i class="fa-brands fa-weixin wechat-icon"></i>
+        <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+      </div>
+    </div>
+    <hr />
+    <div class="footer-links">
+      <div class="footer-links-box">
+        <h3 class="footer-link-header">Customer Service</h3>
+        <ul class="fotter-link-menu">
+          <li class="footer-list">
+            <a href="#" class="footer-link">Customer Support</a>
+          </li>
+          <li class="footer-list">
+            <a href="#" class="footer-link">Help Centre</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-links-box">
+        <h3 class="footer-link-header">Inquiry</h3>
+        <ul class="fotter-link-menu">
+          <li class="footer-list">
+            <a href="#" class="footer-link">Ship</a>
+          </li>
+          <li class="footer-list">
+            <a href="#" class="footer-link">Get Quote</a>
+          </li>
+          <li class="footer-list">
+            <a href="#" class="footer-link">Track</a>
+          </li>
+          <li class="footer-list">
+            <a href="#" class="footer-link">Look for Service Site</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-links-box">
+        <h3 class="footer-link-header">About Speedaf</h3>
+        <ul class="fotter-link-menu">
+          <li class="footer-list">
+            <a href="#" class="footer-link">Customer Support</a>
+          </li>
+          <li class="footer-list">
+            <a href="#" class="footer-link">Help Centre</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-links-box">
+        <h3 class="footer-link-header">Legal</h3>
+        <ul class="fotter-link-menu">
+          <li class="footer-list">
+            <a href="#" class="footer-link">Customer Support</a>
+          </li>
+          <li class="footer-list">
+            <a href="#" class="footer-link">Help Centre</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-links-box">
+        <div class="contact-us-countries">
+          <h3 class="footer-link-header" style="margin-bottom: 0">
+            Contact Us
+          </h3>
+          <select name="countries" class="select-input">
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Algeria">Algeria</option>
+          </select>
+        </div>
+
+        <ul class="fotter-link-menu">
+          <li class="footer-list">
+            <i class="fa-solid fa-phone" style="color: #8a9daa"></i>
+            <a href="tel:07032054367" class="footer-link">07032054367</a>,
+            <a href="tel:07036994665" class="footer-link">07036994665</a>
+          </li>
+          <li class="footer-list">
+            <i class="fa-solid fa-envelope" style="color: #8a9daa"></i>
+            <a href="mailto:orisfina@oci.com.ng" class="footer-link"
+              >orisfina@oci.com.ng</a
+            >
+          </li>
+          <li class="footer-list">
+            <i class="fa-solid fa-clock" style="color: #8a9daa"></i>
+            <span href="#" class="footer-link"
+              >Monday - Saturday | 9am - 6pm</span
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright-section">
+      Copyright &copy; 2019-2024 Speedaf logistics (Shenzhen) Co.
+    </p>
+  </footer>
+</html>
+
+<!-- ASSIGNEMNT: LEARN HTML ENTITIES -->
