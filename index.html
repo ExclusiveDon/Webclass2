@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Speedaf Navbar</title>
+    <title>My Speedaf Clone</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +23,7 @@
           <!-- LEFT -->
           <div class="left">
             <img src="./images/speedaf_logo.png" alt="speedaf" class="logo" />
-            <ul class="nav-menu">
+            <ul id="menu" class="nav-menu">
               <li class="nav-list">
                 <a href="/" class="nav-link">Home</a>
               </li>
@@ -64,7 +64,7 @@
             </button>
             <button class="btn-primary">Register/Login</button>
           </div>
-          <button class="tnavbar">
+          <button id="menu-toggle" class="tnavbar">
             <i class="fa-solid fa-bars"></i>
           </button>
         </nav>
@@ -166,9 +166,8 @@
         </div>
       </div>
     </section>
-  </body>
 
-  <!-- FOOTER SECTION -->
+     <!-- FOOTER SECTION -->
   <footer class="footer">
     <div class="social-media">
       <p style="color: #122533; font-size: 1.7rem; font-weight: 600">
@@ -234,7 +233,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer-links-box">
+      <div class="footer-links-box fl-cont">
         <div class="contact-us-countries">
           <h3 class="footer-link-header" style="margin-bottom: 0">
             Contact Us
@@ -267,11 +266,115 @@
         </ul>
       </div>
     </div>
+    
+    <!-- FOR MOBILE DEVICES -->
+    <div class="footer-links-m">
+      <div class="first-part">
+        <div class="footer-links-box">
+          <h3 class="footer-link-header">Customer Service</h3>
+          <ul class="fotter-link-menu">
+            <li class="footer-list">
+              <a href="#" class="footer-link">Customer Support</a>
+            </li>
+            <li class="footer-list">
+              <a href="#" class="footer-link">Help Centre</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links-box">
+          <h3 class="footer-link-header">Inquiry</h3>
+          <ul class="fotter-link-menu">
+            <li class="footer-list">
+              <a href="#" class="footer-link">Ship</a>
+            </li>
+            <li class="footer-list">
+              <a href="#" class="footer-link">Get Quote</a>
+            </li>
+            <li class="footer-list">
+              <a href="#" class="footer-link">Track</a>
+            </li>
+            <li class="footer-list">
+              <a href="#" class="footer-link">Look for Service Site</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="second-part">
+        <div class="footer-links-box">
+          <h3 class="footer-link-header">About Speedaf</h3>
+          <ul class="fotter-link-menu">
+            <li class="footer-list">
+              <a href="#" class="footer-link">Customer Support</a>
+            </li>
+            <li class="footer-list">
+              <a href="#" class="footer-link">Help Centre</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links-box">
+          <h3 class="footer-link-header">Legal</h3>
+          <ul class="fotter-link-menu">
+            <li class="footer-list">
+              <a href="#" class="footer-link">Customer Support</a>
+            </li>
+            <li class="footer-list">
+              <a href="#" class="footer-link">Help Centre</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links-box fl-cont">
+          <div class="contact-us-countries">
+            <h3 class="footer-link-header" style="margin-bottom: 0">
+              Contact Us
+            </h3>
+            <select name="countries" class="select-input">
+              <option value="Nigeria">Nigeria</option>
+              <option value="Ghana">Ghana</option>
+              <option value="Algeria">Algeria</option>
+            </select>
+          </div>
+  
+          <ul class="fotter-link-menu">
+            <li class="footer-list">
+              <i class="fa-solid fa-phone" style="color: #8a9daa"></i>
+              <a href="tel:07032054367" class="footer-link">07032054367</a>,
+              <a href="tel:07036994665" class="footer-link">07036994665</a>
+            </li>
+            <li class="footer-list">
+              <i class="fa-solid fa-envelope" style="color: #8a9daa"></i>
+              <a href="mailto:orisfina@oci.com.ng" class="footer-link"
+                >orisfina@oci.com.ng</a
+              >
+            </li>
+            <li class="footer-list">
+              <i class="fa-solid fa-clock" style="color: #8a9daa"></i>
+              <span href="#" class="footer-link"
+                >Monday - Saturday | 9am - 6pm</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+    </div>
+
     <hr />
     <p class="copyright-section">
       Copyright &copy; 2019-2024 Speedaf logistics (Shenzhen) Co.
     </p>
   </footer>
-</html>
 
-<!-- ASSIGNEMNT: LEARN HTML ENTITIES -->
+    <script>
+      const menu = document.getElementById('menu');
+      const menuToggle = document.getElementById('menu-toggle');
+      
+      menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+      });
+      </script>
+  </body>
+
+ 
+
+</html>
